@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Folio of Arif Hidayat</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<!--Swiper CSS-->
+	<link rel="stylesheet" href="swiper-bundle.min.css">
+	<!--<style>
+	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+	.w3-row-padding img {margin-bottom: 12px}
+	/* Set the width of the sidebar to 120px */
+	.w3-sidebar {width: 120px;background: #222;}
+	/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+	#main {margin-left: 120px}
+	/* Remove margins from "page content" on small screens */
+	@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+	</style>-->
+</head>
+<body class="w3-black">
+	<!---->
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<!--<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+	<img src="/w3images/avatar_smoke.jpg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+	</a>
+	<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-user w3-xxlarge"></i>
+		<p>ABOUT</p>
+	</a>
+	<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-laptop w3-xxlarge"></i>
+		<p>EXPERIENCE</p>
+	</a>
+	<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-gear w3-xxlarge"></i>
+		<p>WORK</p>
+	</a>
+	<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+		<i class="fa fa-envelope w3-xxlarge"></i>
+		<p>CONTACT</p>
+	
+	</a>
+	</nav>-->
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<div class="navigation">
+		<div class="menuToggle"></div>
+        <ul>
+            <li class="list active" style="--clr:#789EBF;">
+            <a href="#hero">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="text">Home</span>
+            </a>
+            </li>
+			<li class="list" style="--clr:#F2C744;">
+            <a href="#about">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <span class="text">About</span>
+            </a>
+            </li>
+			<li class="list" style="--clr:#F2B749;">
+            <a href="#education">
+                <span class="icon"><ion-icon name="pencil-outline"></ion-icon></span>
+                <span class="text">Education</span>
+            </a>
+            </li>
+			<li class="list" style="--clr:#F2A057;">
+            <a href="#project">
+                <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
+                <span class="text">Project</span>
+            </a>
+            </li>
+			<li class="list" style="--clr:#A65A49;">
+            <a href="#contact">
+                <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                <span class="text">Contact</span>
+            </a>
+            </li>
+        </ul>
+	</div>
+	
+	<script>
+		const menuToggle = document.querySelector('.menuToggle');
+		const navigation = document.querySelector('.navigation');
+		menuToggle.onclick = function(){
+			navigation.classList.toggle('open');
+		}
+		
+		const list = document.querySelectorAll('.list');
+		function activeLink(){
+			list.forEach((item) =>
+			item.classList.remove('active'));
+			this.classList.add('active');
+		}
+		list.forEach((item) =>
+		item.addEventListener('click',activeLink))
+	</script>
+	
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<!--<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#hero" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+	<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+	<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+	<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>-->
+
+<!-- Page Content -->
+<!--<section id="hero">
+	<div class="w3-container w3-padding-32 w3-center">
+		<div class="w3-row">
+			<div style="margin-left:120px;margin-right:20px">
+				<h1 class="w3-jumbo">PORTFOLIO OF <br>ARIF HIDAYAT</h1>
+				<h3>web developer</h3>
+			</div>
+		</div>	
+	</div>
+</section>-->
+<section id="hero">
+	
+			<div class="skew1">
+				<h2 class="layer">FOLIO OF<br> ARIF HIDAYAT</h2>
+				<h3 class="layer2">FRONT-END WEB DEVELOPER</h3>
+			</div>
+			<div class="textBox">
+				<div class="skew2">
+					<h2 class="layer">FOLIO OF<br> ARIF HIDAYAT</h2>
+					<h3 class="layer2">FRONT-END WEB DEVELOPER</h3>
+				</div>
+			</div>
+</section>
+<script>
+	document.addEventListener('mousemove', parallaxText);
+	function parallaxText(e){
+		this.querySelectorAll('.layer').forEach(layer => {
+			let x= (window.innerWidth - e.pageX * 2)/2;
+			layer.style.transform = `translateX(-${x}px)`;
+		})
+	}
+</script>
+<script>
+	document.addEventListener('mousemove', parallaxText);
+	function parallaxText(e){
+		this.querySelectorAll('.layer2').forEach(layer2 => {
+			let x= (window.innerWidth - e.pageX * 2)/2;
+			layer2.style.transform = `translateX(${x}px)`;
+		})
+	}
+</script>
+<!-- About Section -->
+<section id="about">
+	<div class="w3-auto w3-justify w3-text-grey w3-padding-64">
+			<div style="margin-left:120px;margin-right:20px">
+			<h2 class="w3-text-light-grey">ABOUT ME</h2>
+			<!--<hr style="width:200px" class="w3-opacity">-->
+			<div class="w3-row">
+  				<div class="w3-half w3-container">
+					<p>A dedicated individual with an organized and detailed oriented mind seeking an opportunity to hone my skills.  Adaptable and open-minded to learning and developing new and current skills to advance the organization.</p>
+					<p>I am eager and enthusiast to learn a new skills in life. Since I'm taking a web development certificate at Montgomery College, I found out that I enjoy working with code. Here are a couple of languages and tools I've learned to paint your browser.</p>
+				</div>
+  				<div class="w3-half w3-container w3-center">
+					<img src="assets/img/about_me_4.JPG">
+				</div>
+			</div>
+			<h3 class="w3-padding-16 w3-text-light-grey"><span>MY SKILLS</span></h3>
+			<div class="w3-row">
+  				<div class="skillBox w3-half w3-container w3-white w3-round-xlarge">
+					<!--<h3 class="w3-padding-16 w3-text-light-grey"><span>MY SKILLS</span></h3>-->
+					<p class="w3-wide">HTML</p>
+					<div class="w3-white w3-round-xlarge w3-border w3-border-amber">
+					  <div class="w3-container w3-amber w3-round-xlarge" style="height:7px;width:90%;"></div>
+					</div>
+					<p class="w3-wide">CSS</p>
+					<div class="w3-white w3-round-xlarge w3-border w3-border-amber">
+					  <div class="w3-container w3-amber w3-round-xlarge" style="height:7px;width:90%"></div>
+					</div>
+					<p class="w3-wide">Javascript and jQuery</p>
+					<div class="w3-white w3-round-xlarge w3-border w3-border-amber">
+					  <div class="w3-container w3-amber w3-round-xlarge" style="height:7px;width:80%"></div>
+					</div>
+					<p class="w3-wide">XML</p>
+					<div class="w3-white w3-round-xlarge w3-border w3-border-amber">
+					  <div class="w3-container w3-amber w3-round-xlarge" style="height:7px;width:70%"></div>
+					</div>
+					<p class="w3-wide">AJAX</p>
+					<div class="w3-white w3-round-xlarge w3-border w3-border-amber">
+					  <div class="w3-container w3-amber w3-round-xlarge" style="height:7px;width:70%"></div>
+					</div>
+					<p class="w3-wide">RWD</p>
+					<div class="w3-white w3-round-xlarge w3-border w3-border-amber">
+					  <div class="w3-w3-container w3-amber w3-round-xlarge" style="height:7px;width:90%"></div>
+					</div><br>
+						</div>
+  				<div class="w3-half w3-container w3-center">
+					<span class="Sphere"></span>
+					<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+					<script>
+					const Texts = [
+						'HTML', 'CSS', 'JAVASCRIPT',
+						'JQUERY', 'AJAX', 'XML',
+						'BOOTSTRAP', 'W3.CSS'
+					];
+
+					var tagCloud = TagCloud('.Sphere', Texts, {
+
+						// Sphere radius in px
+						radius: 160,
+
+						// animation speed
+						// slow, normal, fast
+						maxSpeed: 'normal',
+						initSpeed: 'fast',
+
+						// Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+						direction: 135,
+
+						// interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+						keep: true
+
+						});
+
+						// Giving color to each text in sphere
+					var color = '#F2C744 ';
+					document.querySelector('.Sphere').style.color = color;
+					</script>
+				</div>
+			</div>
+			<div class="w3-row w3-center">
+				<button class="w3-button w3-margin w3-amber w3-padding-large w3-round-xlarge w3-hover-black w3-border w3-border-amber w3-hover-border-amber">
+			  <i class="fa fa-download"></i> <a href="assets/img/Resume_Arif Hidayat.pdf" >DOWNLOAD RESUME</a>
+    		</button>
+			</div>
+			<div class="w3-row w3-center">
+				<div class="textBox">
+				<div class="skew2">
+				</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+	
+<!--Education-->
+<section id="education">
+	<div class="w3-auto w3-justify w3-text-grey w3-padding-64">
+		<div style="margin-left:120px;margin-right:20px">
+		<h2 class="w3-text-light-grey">EDUCATIONS</h2>
+		<hr style="width:200px" class="w3-opacity">
+			<!--<p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p><br>-->
+			<div class="w3-row">
+				<div class="w3-half w3-container w3-white w3-round-xlarge w3-hover-text-white" id="ec">
+					<h3>Montgomery College</h3>
+					<p><b>Front-End Web Development Certification</b></p>
+					<p>I learned the fundamentals how to build beautiful and interactive websites. I learned couple of languanges and tools which is HTML5, CSS3, JavaScript, JQuery,XML, JSON, AJAX, and Responsive Web Design. </p>
+					<button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="https://live.itiwebcert.com/2022/summer/Capstone/Hidayat-A/index.html">Capstone Dashboard</a></button>
+				</div>
+				<div class="w3-half w3-container w3-white w3-round-xlarge w3-hover-text-white" id="ec">
+					<h3>University of Padjadjaran</h3>
+					<p><b>Bachelor's degree in Science (Geological Engineering)</b></p>
+					<p>Faculty of Geological Engineering is engaged in learning and developing Geology Science by orienting to the link and match patterns. In its implementation, the Faculty strives to produce reliable and professional geologists.</p>
+                    <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="https://www.unpad.ac.id/en/fakultas/geological-engineering/" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a></button>
+				</div>
+			</div>
+  		</div>
+	</div>
+</section>
+  <!-- Project Section -->
+<!--<section id="project"> 
+	<div class="w3-padding-64 w3-content" id="photos">
+		<div style="margin-left:120px;margin-right:20px">
+			<h2 class="w3-text-light-grey">My Projects</h2>
+			<hr style="width:200px" class="w3-opacity">
+
+			<div class="container">
+				<div class="w3-row-padding" style="margin:0 -16px">
+				<div class="w3-container w3-third w3-hover">
+					<p><a href="../../Session_1-4/index.html">San Joaquin Valley Townhall</a><p>
+					<img src="assets/img/htmltown_hall_2.JPG" style="width:100%">
+				</div>
+				<div class="w3-container w3-third">
+					<p><a href="../../Session_9-12/index.html">Javascript Apps</a></p>
+					<img src="assets/img/js.JPG" style="width:100%">
+				</div>
+				<div class="w3-container w3-third">
+					<p><a href="../../Session_20/session20/exercise2/getBucketlist.html">Ajax Trip Location</a></p>
+					<img src="assets/img/ajax_location_2.JPG" style="width:100%">
+				</div>
+				</div>
+				<div class="w3-row-padding" style="margin:0 -16px">
+				<div class="w3-container w3-third">
+					<p><a href="../../Session_13-16/Displaying Images/index.html">jQuery Plugins Travel Indonesia</a></p>
+					<img src="assets/img/jquery_travel_indo_2.jpg" style="width:100%">
+				</div>
+				<div class="w3-container w3-third">
+					<p><a href="../RWD_Bootstrap_Website/index.html">Bootstrap Framework Webpage</a></p>
+					<img src="assets/img/jquery_travel_indo_2.jpg" style="width:100%">
+				</div>
+				<div class="w3-container w3-third">
+					<p><a href="../../Session_13-16/ch11-1/cycle2_sol/index.html">Cycle Plugin App</a></p>
+					<img src="assets/img/jquery_cycle.JPG" style="width:100%">
+				</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+	
+<section class="project adjust" id=project>
+	<div class="w3-auto w3-justify w3-text-grey w3-padding-64">
+    	<div style="margin-left:120px;margin-right:20px">
+          <h2 class="w3-text-light-grey">PROJECTS</h2>
+          <div class="content">
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="assets/img/htmltown_hall_2.JPG" width="240" height="300">
+                  </div>
+                  <div class="textBx">
+                      <h5>San Joaquin Valley Townhall</h5>
+					  <p>This is my first Learning Project using HTML and CSS. HTML is the language for describing the structure of Web pages and CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.</p>
+					  <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="../../Session_1-4/index.html">SEE MORE</a></button>
+                  </div>
+              </div>
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="assets/img/project2.JPG" width="240" height="300">
+                  </div>
+                  <div class="textBx">
+                      <h5>Javascript Apps</h5>
+					  <p>There are couples Apps that I developed with Javascript as a scripting language that helped me to create dynamically updating content for the apps.</p>
+					  <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="../../Session_9-12/index.html">SEE MORE</a></button>
+                  </div>
+              </div>
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="assets/img/project3.JPG" width="240" height="300">
+                  </div>
+                  <div class="textBx">
+                      <h5>Ajax Trip Location</h5>
+					  <p>Ajax means Asynchronous Javascript and XML. I used XML to storing and transmitting the data and AJAX helped me to update parts of a web page, without reloading the whole page.</p>
+					  <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="../../Session_20/session20/exercise2/getBucketlist.html">SEE MORE</a></button>
+                  </div>
+              </div>
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="assets/img/project4.JPG" width="240" height="300">
+                  </div>
+                  <div class="textBx">
+                      <h5>Travel Indonesia</h5>
+					  <p>I finished this project by using jQuery. jQuery is a Javascript library that makes easier to build interactive and attractive website.</p>
+					  <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="../../Session_13-16/Displaying Images/index.html">SEE MORE</a></button>
+                  </div>
+              </div>
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="assets/img/project5.JPG" width="240" height="300">
+                  </div>
+                  <div class="textBx">
+                      <h5>Bootstrap Framework Website</h5>
+					  <p>I built this capstone portfolio project with Bootstrap. Bootstrap is a framework that helps me developing responsive and mobile-first websites or RWD.</p>
+					  <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="../RWD_Bootstrap_Website/index.html">SEE MORE</a></button>
+                  </div>
+              </div>
+              <div class="workBx">
+                  <div class="imgBx">
+                      <img src="assets/img/project6.JPG" width="240" height="300">
+                  </div>
+                  <div class="textBx">
+                      <h5>Cycle Plugin App</h5>
+					  <p>This is another Example of App that I learned to understand jQuery makes it easy to manipulate web pages using CSS selectors.</p>
+					  <button class="w3-button w3-tiny w3-black w3-round-xlarge w3-border w3-border-amber w3-hover-border-black w3-hover-amber"><a href="../../Session_13-16/ch11-1/cycle2_sol/index.html">SEE MORE</a></button>
+                  </div>
+              </div>
+          </div>
+		</div>
+	</div>
+</section>	
+
+<!-- Prospective Employer Section -->
+<section id=employers>
+	<div class="w3-auto w3-justify w3-text-grey w3-padding-64">
+		<div style="margin-left:120px;margin-right:20px">
+		<h2 class="w3-text-white">PROSPECTIVE EMPLOYER</h2>
+			<div class="slide-container swiper">
+				<div class="slide-content">
+					<div class="card-wrapper swiper-wrapper">
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_1.png" alt="" class="card-img">
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">WebMechanix</h2>
+								<p class="description">WebMechanix is a performance-based digital marketing agency that helps mid-market companies rapidly grow their leads and bottom line. We get out of bed every morning to deliver results.</p>
+
+								<button class="button"><a href="https://www.webmechanix.com/">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_2.png" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">Modern Signal</h2>
+								<p class="description">Founded in 2001, Modern Signal is a Washington, DC-area custom website design and development firm with solutions for associations, non-profits, foundations and private companies - large and small alike.</p>
+
+								<button class="button"><a href="https://www.modernsignal.com/?utm_source=clutch.co&utm_medium=referral">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_3.png" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">Social Driver</h2>
+								<p class="description">Social Driver is a leading digital agency with in-house expertise for using social media, digital strategy, content and video, websites, and brand design to have an impact for a brighter future. </p>
+
+								<button class="button"><a href="https://www.socialdriver.com/?utm_source=clutch.co&utm_medium=referral&utm_campaign=directory">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_4.jpg" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">Design In DC</h2>
+								<p class="description">A Digital Agency For The Future. Create websites and apps that are fully customized, scalable, easy to manage, and have a creative twist.</p>
+
+								<button class="button"><a href="https://designindc.com/?utm_source=clutch.co&utm_medium=referral&utm_campaign=directory">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_5.png" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">nclud</h2>
+								<p class="description">Founded in 1998, nclud is an interactive agency that has been around for almost as long as the Internet itself. More than a digital creative agency, its team is known as unabashed agents of change.</p>
+
+								<button class="button"><a href="https://nclud.com/">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_6.png" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">The Brick Factory</h2>
+								<p class="description">the Brick Factory, a Washington, DC-based team of strategists, designers, and developers who plan and execute digital communications campaigns.</p>
+
+								<button class="button"><a href="https://www.thebrickfactory.com/?utm_source=clutch.co&utm_medium=referral&utm_campaign=directory">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_8.jpg" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">BuildLab</h2>
+								<p class="description">We use modern software to scale businesses. We build powerful software to grow businesses.</p>
+
+								<button class="button"><a href="https://buildlab.co/?utm_source=clutch.co&utm_medium=referral&utm_campaign=directory">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers_9.jpg" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">Darwin</h2>
+								<p class="description">Darwin is a digital experience agency that helps businesses, start-ups and nonprofits conceive and create brands, websites, tools, and apps that your customers will love!</p>
+
+								<button class="button"><a href="https://darwinapps.com/?utm_source=clutch.co&utm_medium=referral&utm_campaign=directory">View More</a></button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="assets/img/prospective_employers10.png" alt="" class="card-img" width="10" height="10" >
+								</div>
+							</div>
+							<div class="card-content">
+								<h5 class="name">Rackner</h2>
+								<p class="description">Rackner is a Digital Transformation Consultancy and Certified AWS Partner that builds innovative solutions for enterprises and startups.</p>
+
+								<button class="button"><a href="https://rackner.com/?utm_source=clutch&utm_medium=referral">View More</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-button-next swiper-navBtn" id="swiper-navBtn"></div>
+				<div class="swiper-button-prev swiper-navBtn" id="swiper-navBtn"></div>
+				<div class="swiper-pagination"></div>
+		
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+	<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+		<div style="margin-left:120px;margin-right:20px">
+			<h2 class="w3-text-light-grey">CONTACT ME</h2>
+
+			<div class="w3-section">
+			  <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Maryland, US</p>
+			<!--  <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>-->
+			  <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: arif.pracasta@gmail.com</p>
+			</div><br>
+			<p>Let's get in touch. Send me a message:</p>
+
+			<form action="/action_page.php" target="_blank">
+			  <p><input class="w3-input w3-padding-16 w3-round-xlarge" type="text" placeholder="Name" required name="Name"></p>
+			  <p><input class="w3-input w3-padding-16 w3-round-xlarge" type="text" placeholder="Email" required name="Email"></p>
+			  <p><input class="w3-input w3-padding-16 w3-round-xlarge" type="text" placeholder="Subject" required name="Subject"></p>
+			  <p><input class="w3-input w3-padding-16 w3-round-xlarge" type="text" placeholder="Message" required name="Message"></p>
+			  <p>
+				<button class="w3-button w3-light-grey w3-padding-large w3-round-xlarge" type="submit">
+				  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+				</button>
+			  </p>
+			</form>
+  		</div>
+	</div>
+</section>
+    <!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+	<div style="margin-left:120px;margin-right:20px">
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+	</div>
+  <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--Swiper JS-->
+<script src="swiper-bundle.min.js"></script>
+<!--Javascript-->
+<script src="script.js"></script>
+</body>
+</html>
